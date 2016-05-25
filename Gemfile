@@ -1,4 +1,6 @@
 # A sample Gemfile
+source "https://gems.ruby-china.org/"
+
 
 gem 'settingslogic'
 gem 'appium_lib','>= 7.0.0'
@@ -14,6 +16,9 @@ gem 'mysql2','>=0.3.19'
 gem 'rest-client','>=1.8.0'
 gem 'ruby-jq','>=0.1.6'
 gem 'childprocess','=0.5.6'
+gem 'git'
+gem 'mysql'
+gem 'json'
 
 #安装ruby-jq
 #git clone https://github.com/stedolan/jq.git

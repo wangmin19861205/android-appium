@@ -19,7 +19,7 @@ end
 
 
 
-p MySSH.sshconn('export PATH="$PATH:/usr/local/opt/redis/bin"; echo "FLUSHALL" | redis-cli')
+# p MySSH.sshconn('export PATH="$PATH:/usr/local/opt/redis/bin"; echo "FLUSHALL" | redis-cli')
 #MySSH.sshconn('lsof -i tcp:4723')
 #MySSH.sshconn(appium -a 127.0.0.1 -p4723 -UF2C0214807009313 --no-reset)
 

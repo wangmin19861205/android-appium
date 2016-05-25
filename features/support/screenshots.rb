@@ -9,13 +9,15 @@
 module Screenshots
 
   def embed_screenshot_appium(id)
-    @driver.screenshot  "#{ENV["reportpath"]}#{id}.png"
-    embed("#{id}.png", "image/png")
+    img="#{ENV["reportpath"]}#{id}.png"
+    @driver.screenshot  "#{img}"
+    embed("#{img}", "image/png")
   end
 
   def embed_screenshot_osx(id)
-    `screencapture -t png #{ENV["reportpath"]}#{id}.png`
-    embed("#{id}.png", "image/png")
+    img="#{ENV["reportpath"]}#{id}.png"
+    `screencapture -t png #{img}`
+    embed("#{img}", "image/png")
   end
   # http://wtr.rubyforge.org/rdoc/classes/Watir/ScreenCapture.html
 
@@ -23,8 +25,9 @@ module Screenshots
     require 'watir/screen_capture'
     include Watir::ScreenCapture
     def embed_screenshot_ie(id)
-      screen_capture("#{ENV["reportpath"]}#{id}.jpg", true)
-      embed("#{id}.jpg", "image/jpeg")
+      img="#{ENV["reportpath"]}#{id}.jpg"
+      screen_capture("#{img}", true)
+      embed("#{img}", "image/jpeg")
     end
   end
     # Other platforms...

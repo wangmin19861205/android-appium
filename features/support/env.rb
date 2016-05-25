@@ -42,7 +42,7 @@ caps=Appium.load_appium_txt file: File.join(base_dir,"/config/appium.txt"),verbo
 
 
  Before do |scenario|
-  clear_redis
+  # clear_redis
   # http_client = ::Selenium::WebDriver::Remote::Http::Default.new
   # http_client.timeout = 80
   # @driver=Selenium::WebDriver.for(
