@@ -4,12 +4,6 @@ Guide_first_close_button={id: 'com.zrcaifu:id/index_first_start_guide1_close_but
 
 Home_title={id: 'com.zrcaifu:id/title_text'}
 
-Home_title={xpath: '//*[class="com.zrcaifu:id/title_text/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/...
-./android.widget.TextView"]'}
-
-Home_title={xpath: '//*[id="android:id/content]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout'}
-
-
 To_home_button={id: 'com.zrcaifu:id/bottom_bar_index'}
 
 To_index_button={id: 'com.zrcaifu:id/bottom_bar_index'}
